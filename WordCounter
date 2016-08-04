@@ -56,8 +56,5 @@ WrdCntr = function(phrase){
 
 WrdLst = tolower(readLines("WordList.csv"))
 
-WrdCntr(WrdLst[1])
-
-
 DF = as.data.frame(t(data.frame(FileName,No.of.pages,lapply(WrdLst,WrdCntr))))
 
