@@ -41,7 +41,7 @@ for(i in 1:length(pdfInput)){
        txt[i] = paste(pdf_text(pdfInput[i]), collapse = " ")        
 }
 
-library(stringi)
+library(stringr)
 
 WrdCntr = function(phrase){
         WordCount = NULL
@@ -57,4 +57,3 @@ WrdCntr = function(phrase){
 WrdLst = tolower(readLines("WordList.csv"))
 
 DF = as.data.frame(t(data.frame(FileName,No.of.pages,lapply(WrdLst,WrdCntr))))
-
