@@ -2,6 +2,7 @@ rm(list=ls())
 
 library(pdftools)
 
+# Change directory Path
 setwd("C:\\Users\\dipanjand\\Desktop\\ICRA\\ICRA Text Analytics\\Power")
 
 pdfInput = list.files(pattern = "pdf$")
